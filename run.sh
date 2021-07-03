@@ -11,3 +11,5 @@ cd ../gem5
 --cpu-type=O3_ARM_v7a_3 --caches \
 -r 1 \
 -I 1000000
+
+cd ../gem5_utils_ng
