@@ -3,7 +3,7 @@
 
 scons ./build/ARM/gem5.opt -j 15
 
-export M5_PATH=/home/itecgo/Tools/gem5-full-system-files/aarch-system-20170616
+export M5_PATH=/home/itecgo/Tools/gem5-full-system-files
 
 ./build/ARM/gem5.opt configs/example/fs.py \
 --kernel=$M5_PATH/binaries/vmlinux.vexpress_gem5_v1_64.20170616 \
