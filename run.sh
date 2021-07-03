@@ -1,3 +1,8 @@
+# Install extra prerequisites:
+# sudo apt-get install python-six zlib1g-dev libpng-dev swig
+
+scons ./build/ARM/gem5.opt -j 15
+
 export M5_PATH=/home/itecgo/Tools/gem5-full-system-files/aarch-system-20170616
 
 ./build/ARM/gem5.opt configs/example/fs.py \
