@@ -1,6 +1,6 @@
 export M5_PATH=/home/itecgo/Tools/gem5-full-system-files/aarch-system-20170616
 
-export GEM5=$1 || gem5
+export GEM5=$1
 
 cd ../$GEM5
 
