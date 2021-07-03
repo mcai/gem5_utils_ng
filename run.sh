@@ -1,0 +1,7 @@
+# build/ARM/gem5.opt -d ./m5out/bzip2 configs/example/fs.py --cpu-type=O3_ARM_N1 --caches --l2_size=2MB --l1d_size=512kB --l1i_size=512kB --l1d_assoc=8 --l1i_assoc=8 --l2_assoc=16 --script=/home/tzy/full_system_images/rcS/CPU06/450.soplex.rcS --kernel=/home/tzy/full_system_images/binaries/vmlinux.euler --disk-image=/home/tzy/full_system_images/expanded-linaro-minimal-aarch64.img -F 7000000000 -I 10000000000
+
+# build/ARM/gem5.opt -d ./m5out/bzip2 configs/example/fs.py --kernel=/home/itecgo/Tools/gem5-full-system-files/binaries/vmlinux.arm --disk-image=/home/itecgo/Tools/gem5-full-system-files/disks/aarch32-ubuntu-natty-headless.img
+
+export M5_PATH=/home/itecgo/Tools/gem5-full-system-files/aarch-system-20170616
+
+./build/ARM/gem5.opt configs/example/fs.py --bootloader=/home/itecgo/Tools/gem5-full-system-files/aarch-system-20170616/binaries/boot_emm.arm64 --kernel=/home/itecgo/Tools/gem5-full-system-files/aarch-system-20170616/binaries/vmlinux.vexpress_gem5_v1_64.20170616 --machine-type=VExpress_GEM5_V1 --dtb-file=/home/itecgo/Tools/gem5-full-system-files/aarch-system-20170616/binaries/armv8_gem5_v1_1cpu.20170616.dtb --disk-image=/home/itecgo/Tools/gem5-full-system-files/aarch-system-20170616/disks/aarch64-ubuntu-trusty-headless.img --cpu-type=O3_ARM_v7a_3 --caches -r 1 -I 1000000
