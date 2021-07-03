@@ -11,4 +11,4 @@ export M5_PATH=/home/itecgo/Tools/gem5-full-system-files
 --machine-type=VExpress_GEM5_V1 \
 --dtb-file=$M5_PATH/binaries/armv8_gem5_v1_1cpu.20170616.dtb \
 --disk-image=$M5_PATH/disks/expanded-linaro-minimal-aarch64.img \
---script=../gem5_utils_ng/checkpoint.rcS
+--script=./configs/boot/hack_back_ckpt.rcS
