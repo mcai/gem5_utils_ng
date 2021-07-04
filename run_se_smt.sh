@@ -1,11 +1,11 @@
 # Install extra prerequisites:
 # sudo apt-get install python-six zlib1g-dev libpng-dev swig
 
-scons ./build/X86/gem5.opt -j 15
+scons ./build/ARM/gem5.opt -j 15
 
-./build/X86/gem5.opt \
+./build/ARM/gem5.opt \
 ./configs/example/se.py \
 --cpu-type=DerivO3CPU \
 --caches \
-'--cmd=tests/test-progs/hello/bin/x86/linux/hello' \
+'--cmd=tests/test-progs/hello/bin/arm/linux/hello' \
 --smt
