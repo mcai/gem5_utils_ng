@@ -7,5 +7,5 @@ scons ./build/X86/gem5.opt -j 15
 ./configs/example/se.py \
 --cpu-type=DerivO3CPU \
 --caches \
-'--cmd=tests/test-progs/hello/bin/x86/linux/hello;tests/test-progs/hello/bin/x86/linux/hello' \
+'--cmd=tests/test-progs/hello/bin/x86/linux/hello' \
 --smt
