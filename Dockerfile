@@ -22,6 +22,7 @@ RUN cd /gem5-full-system-files/ && tar -xf aarch-system-20210904.tar.bz2 && rm a
 COPY build.sh /gem5/
 COPY run.sh /gem5/
 COPY term.sh /gem5/
+COPY img.sh /gem5/
 
 RUN cd /gem5/util/term && make
 
