@@ -4,7 +4,8 @@ export M5_PATH=/gem5-full-system-files
 --kernel=$M5_PATH/binaries/vmlinux.arm64 \
 --disk-image=$M5_PATH/ubuntu-18.04-arm64-docker.img \
 --dtb-file=./system/arm/dt/armv8_gem5_v1_1cpu.dtb \
---bootloader=$M5_PATH/binaries/boot.arm64
+--bootloader=$M5_PATH/binaries/boot.arm64 \
+--script=$M5_PATH/benchmarks/CPU2006/462.libquantum/462.libquantum.rcS
 
 # ./build/ARM/gem5.opt configs/example/fs.py \
 # # --bootloader=$M5_PATH/binaries/boot_emm.arm64 \
