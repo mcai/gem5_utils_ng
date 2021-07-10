@@ -1,0 +1,1 @@
+scons ./build/ARM/gem5.opt -j 4
