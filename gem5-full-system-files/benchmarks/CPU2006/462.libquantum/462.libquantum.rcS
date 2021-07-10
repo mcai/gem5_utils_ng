@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd /home/root/benchmarks/462.libquantum
+
+./libquantum 1397 8
+
+m5 exit
