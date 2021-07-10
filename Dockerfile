@@ -25,4 +25,9 @@ COPY term.sh /gem5/
 
 RUN cd /gem5/util/term && make
 
+RUN make -C /gem5/system/arm/bootloader/arm64
+
+RUN apt -y install device-tree-compiler
+RUN make -C /gem5/system/arm/dt
+
 WORKDIR /gem5
