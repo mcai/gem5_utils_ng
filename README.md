@@ -31,6 +31,6 @@ Inside the container, use the following scripts:
 
 - 0.build.sh - Build gem5
 - 1.img.sh - Copy full system files to the disk image
-- 2.ckpt.sh - Take checkpoint
-- 3.run.sh - Restore from checkpoint
+- 2.ckpt.sh - Boot to Linux command prompt using simple atomic CPU and take checkpoint
+- 3.run.sh - Restore from checkpoint and run benchmark using O3 CPU
 - 4.term.sh - m5term 3456
