@@ -31,6 +31,6 @@ COPY 1.img.sh /gem5/
 COPY 2.ckpt.sh /gem5/
 COPY 3.run.sh /gem5/
 COPY 4.term.sh /gem5/
-COPY .vscode/launch.json /gem5/.vscode
+COPY .vscode/launch.json /gem5/.vscode/launch.json
 
 WORKDIR /gem5
