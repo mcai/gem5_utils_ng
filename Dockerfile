@@ -20,6 +20,7 @@ RUN cd /gem5-full-system-files/ && bzip2 -d ubuntu-18.04-arm64-docker.img.bz2
 RUN cd /gem5-full-system-files/ && tar -xf aarch-system-20210904.tar.bz2 && rm aarch-system-20210904.tar.bz2
 
 COPY build.sh /gem5/
+COPY checkpoint.sh /gem5/
 COPY run.sh /gem5/
 COPY term.sh /gem5/
 COPY img.sh /gem5/
