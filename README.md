@@ -8,7 +8,7 @@ Default settings should be workable, but can be customized for your needs.
 
 ## Prerequisites
 
-Download and put aarch-system-20210904.tar.bz2 and ubuntu-18.04-arm64-docker.img.bz2 (from gem5 guest images webpage) in the gem5-full-system-files/.
+Download and put `aarch-system-20210904.tar.bz2` (from http://dist.gem5.org/dist/v21-0/arm/aarch-system-20210904.tar.bz2) and `ubuntu-18.04-arm64-docker.img.bz2` (from http://dist.gem5.org/dist/current/arm/disks/ubuntu-18.04-arm64-docker.img.bz2) in the gem5-full-system-files/.
 
 ## Enable VSCode Integration for Docker
 
