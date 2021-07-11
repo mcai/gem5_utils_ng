@@ -6,7 +6,7 @@ export M5_PATH=/gem5-full-system-files
 --dtb-file=./system/arm/dt/armv8_gem5_v1_1cpu.dtb \
 --bootloader=$M5_PATH/binaries/boot.arm64 \
 --script=$M5_PATH/benchmarks/CPU2006/462.libquantum/462.libquantum.rcS \
---cpu-type=O3_ARM_v7a_3 --caches -r
+--cpu-type=O3_ARM_v7a_3 --caches -r 1
 
 # ./build/ARM/gem5.opt configs/example/fs.py \
 # # --bootloader=$M5_PATH/binaries/boot_emm.arm64 \
