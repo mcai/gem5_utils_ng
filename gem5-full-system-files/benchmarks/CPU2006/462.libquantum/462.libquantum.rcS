@@ -1,7 +1,7 @@
 #!/bin/bash
 
-cd /home/root/benchmarks/462.libquantum
-
-./libquantum 1397 8
+cd /root/benchmarks/CPU2006/462.libquantum
+chmod +x ./462.libquantum.aarch64
+./462.libquantum.aarch64 1397 8
 
 m5 exit
