@@ -5,4 +5,4 @@ export M5_PATH=/gem5-full-system-files
 --disk-image=$M5_PATH/ubuntu-18.04-arm64-docker.img \
 --dtb-file=./system/arm/dt/armv8_gem5_v1_1cpu.dtb \
 --bootloader=$M5_PATH/binaries/boot.arm64 \
---script=./checkpoint.rcS
+--script=configs/boot/hack_back_ckpt.rcS
