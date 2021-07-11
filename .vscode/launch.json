@@ -1,0 +1,43 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/gem5/build/ARM/gem5.opt",
+            "args": [
+                "configs/example/fs.py",
+                "--kernel=$M5_PATH/binaries/vmlinux.arm64",
+                "--disk-image=$M5_PATH/ubuntu-18.04-arm64-docker.img",
+                "--dtb-file=./system/arm/dt/armv8_gem5_v1_1cpu.dtb",
+                "--bootloader=$M5_PATH/binaries/boot.arm64",
+                "--script=$M5_PATH/benchmarks/CPU2006/462.libquantum/462.libquantum.rcS",
+                "--cpu-type=O3_ARM_v7a_3",
+                "--caches",
+                "-r",
+                "1"
+            ],
+            "stopAtEntry": false,
+            "cwd": "/gem5",
+            "environment": [
+                {
+                    "name": "M5_PATH",
+                    "value": "/gem5-full-system-files"
+                }
+            ],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}

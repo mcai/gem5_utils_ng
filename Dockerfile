@@ -24,12 +24,13 @@ COPY 1.img.sh /gem5/
 COPY 2.ckpt.sh /gem5/
 COPY 3.run.sh /gem5/
 COPY 4.term.sh /gem5/
+COPY .vscode/ /gem5/
 
 RUN cd /gem5/util/term && make
 
 RUN make -C /gem5/system/arm/bootloader/arm64
 
-RUN apt -y install device-tree-compiler
+RUN apt -y install gdb device-tree-compiler
 RUN make -C /gem5/system/arm/dt
 
 WORKDIR /gem5
