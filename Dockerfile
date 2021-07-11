@@ -19,18 +19,18 @@ COPY gem5-full-system-files /gem5-full-system-files/
 RUN cd /gem5-full-system-files/ && bzip2 -d ubuntu-18.04-arm64-docker.img.bz2
 RUN cd /gem5-full-system-files/ && tar -xf aarch-system-20210904.tar.bz2 && rm aarch-system-20210904.tar.bz2
 
-COPY 0.build.sh /gem5/
-COPY 1.img.sh /gem5/
-COPY 2.ckpt.sh /gem5/
-COPY 3.run.sh /gem5/
-COPY 4.term.sh /gem5/
-COPY .vscode/ /gem5/
-
 RUN cd /gem5/util/term && make
 
 RUN make -C /gem5/system/arm/bootloader/arm64
 
 RUN apt -y install gdb device-tree-compiler
 RUN make -C /gem5/system/arm/dt
+
+COPY 0.build.sh /gem5/
+COPY 1.img.sh /gem5/
+COPY 2.ckpt.sh /gem5/
+COPY 3.run.sh /gem5/
+COPY 4.term.sh /gem5/
+COPY .vscode/launch.json /gem5/.vscode
 
 WORKDIR /gem5
