@@ -20,8 +20,8 @@ First install Docker Desktop on Windows 10 or Mac OS, Docker engine on Linux.
 
 Then use the following scripts:
 
-docker_build.sh - Build gem5 docker image locally
-docker_run.sh - Run the previously built docker image named as "gem5"
+- docker_build.sh - Build gem5 docker image locally
+- docker_run.sh - Run the previously built docker image named as "gem5"
 
 ## gem5
 
@@ -29,8 +29,8 @@ In VSCode "Docker" view, select and attach to the previous "gem5" Docker contain
 
 Inside the container, use the following scripts:
 
-0.build.sh - Build gem5
-1.img.sh - Copy full system files to the disk image
-2.ckpt.sh - Take checkpoint
-3.run.sh - Restore from checkpoint
-4.term.sh - m5term 3456
+- 0.build.sh - Build gem5
+- 1.img.sh - Copy full system files to the disk image
+- 2.ckpt.sh - Take checkpoint
+- 3.run.sh - Restore from checkpoint
+- 4.term.sh - m5term 3456
