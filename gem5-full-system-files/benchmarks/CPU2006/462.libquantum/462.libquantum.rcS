@@ -2,6 +2,7 @@
 
 cd /root/benchmarks/CPU2006/462.libquantum
 chmod +x ./462.libquantum.aarch64
-./462.libquantum.aarch64 1397 8
+# ./462.libquantum.aarch64 1397 8
+./462.libquantum.aarch64 33 5
 
 m5 exit
