@@ -7,7 +7,7 @@ RUN apt -y install build-essential git m4 scons zlib1g zlib1g-dev \
     libprotobuf-dev protobuf-compiler libprotoc-dev libgoogle-perftools-dev \
     python3-dev python3 python3-six doxygen libboost-all-dev \
     libhdf5-serial-dev python3-pydot libpng-dev libelf-dev pkg-config \
-    gdb python-six device-tree-compiler wget
+    g++-aarch64-linux-gnu gdb python-six device-tree-compiler wget
 
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python2 1
