@@ -23,7 +23,7 @@ RUN cd /gem5/util/term && make
 
 RUN make -C /gem5/system/arm/bootloader/arm64
 
-RUN apt -y install gdb device-tree-compiler
+RUN apt -y install gdb python-six device-tree-compiler
 RUN make -C /gem5/system/arm/dt
 
 COPY 0.build.sh /gem5/
