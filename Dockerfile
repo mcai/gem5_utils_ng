@@ -17,10 +17,7 @@ RUN cd /gem5 && scons build/ARM/gem5.opt -j7
 
 RUN wget -N http://dist.gem5.org/dist/v21-0/arm/aarch-system-20210904.tar.bz2
 RUN wget -N http://dist.gem5.org/dist/current/arm/disks/ubuntu-18.04-arm64-docker.img.bz2
-
 COPY gem5-full-system-files /gem5-full-system-files/
-RUN cd /gem5-full-system-files/ && bzip2 -d ubuntu-18.04-arm64-docker.img.bz2
-RUN cd /gem5-full-system-files/ && tar -xf aarch-system-20210904.tar.bz2 && rm aarch-system-20210904.tar.bz2
 
 RUN cd /gem5/util/term && make
 RUN make -C /gem5/system/arm/bootloader/arm64
